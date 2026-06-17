@@ -1,5 +1,3 @@
-# Benchmarki Bielika
-
 Tabela benchmarków, na których raportowano wyniki modeli z rodziny Bielik, wraz ze statusem dostępności, linkiem do ewaluatora, linkiem do danych oraz źródłem potwierdzającym ewaluację Bielika.
 
 ## Legenda statusów
