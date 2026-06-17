@@ -1,5 +1,3 @@
-# Benchmarki Bielika
-
 Tabela benchmarków, na których raportowano wyniki modeli z rodziny Bielik, wraz ze statusem dostępności, linkiem do ewaluatora, linkiem do danych oraz źródłem potwierdzającym ewaluację Bielika.
 
 ## Legenda statusów
@@ -20,7 +18,7 @@ Tabela benchmarków, na których raportowano wyniki modeli z rodziny Bielik, wra
 | Polish EQ-Bench                                | closed    | Bielik-11B-v3.0-Instruct      | 71.20 / 100               | [ewaluator](https://huggingface.co/spaces/speakleash/polish_eq-bench)                    | N/A                                                                                                | [raport](https://arxiv.org/pdf/2601.11579)                                        |
 | CPTU-Bench / CPTUB                             | closed    | Bielik-11B-v3.0-Instruct      | 3.73 / 5                  | [ewaluator](https://huggingface.co/spaces/speakleash/cptu_bench)                         | N/A                                                                                                | [raport](https://arxiv.org/pdf/2601.11579)                                        |
 | Polish Medical Leaderboard                     | open      | Bielik-11B-v3.0-Instruct      | 50.21 / 100               | [ewaluator](https://huggingface.co/spaces/speakleash/polish_medical_leaderboard)         | [dane](https://huggingface.co/datasets/speakleash/PES-2018-2022)                                   | [raport](https://arxiv.org/pdf/2601.11579)                                        |
-| PLCC                                           | open      | Bielik-11B-v3.0-Instruct      | 71.83 / 100               | [ewaluator](https://huggingface.co/spaces/sdadas/plcc)                                   | [dane](https://huggingface.co/spaces/sdadas/plcc/blob/main/data.json)                              | [raport](https://arxiv.org/pdf/2601.11579)                                        |
+| PLCC                                           | closed      | Bielik-11B-v3.0-Instruct      | 71.83 / 100               | [ewaluator](https://huggingface.co/spaces/sdadas/plcc)                                   | [dane](https://huggingface.co/spaces/sdadas/plcc/blob/main/data.json)                              | [raport](https://arxiv.org/pdf/2601.11579)                                        |
 | LLMzSzŁ                                        | open      | Bielik-11B-v2.1-Instruct      | 57.52 / 100               | [ewaluator](https://huggingface.co/spaces/amu-cai/LLMZSZL_Leaderboard)                   | [dane](https://huggingface.co/datasets/amu-cai/llmzszl-dataset)                                    | [raport](https://arxiv.org/html/2505.02410v2)                                     |
 | European LLM Leaderboard                       | open      | Bielik-11B-v2.3-Instruct      | 0.66 / 1.00               | [ewaluator](https://huggingface.co/spaces/speakleash/european_leaderboard_bielik)        | [dane](https://huggingface.co/collections/openGPT-X/eu20-benchmarks-67093b13db8ff192dc39312d)      | [raport](https://arxiv.org/html/2505.02410v2)                                     |
 | EuroEval                                       | open      | Bielik-11B-v2.3-Instruct      | rank 2.22; PL 1.41        | [ewaluator](https://euroeval.com/leaderboards/Multilingual/european/)                    | [dane](https://euroeval.com/datasets/)                                                             | [raport](https://arxiv.org/html/2505.02410v2)                                     |
@@ -39,7 +37,7 @@ Tabela benchmarków, na których raportowano wyniki modeli z rodziny Bielik, wra
 | Open PT LLM Leaderboard / Portuguese Benchmark | open      | Bielik-11B-v2.1/v2.2-Instruct | 73.45 / 100               | [ewaluator](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard)            | [harness](https://github.com/eduagarcia/lm-evaluation-harness-pt)                                  | [raport](https://arxiv.org/html/2505.02410v2)                                     |
 | INCLUDE-base-44                                | open      | Bielik-11B-v3.0-Instruct      | 64.8 / 100; PL 69.0 / 100 | [ewaluator](https://huggingface.co/spaces/speakleash/include-base-european-leaderboard)  | [dane](https://huggingface.co/datasets/CohereLabs/include-base-44)                                 | [raport](https://arxiv.org/pdf/2601.11579)                                        |
 | Belebele                                       | open      | Bielik-11B-v3.0-Instruct      | 82.98 / 100               | [ewaluator](https://huggingface.co/spaces/speakleash/belebele-european-leaderboard)      | [dane](https://huggingface.co/datasets/facebook/belebele)                                          | [raport](https://arxiv.org/pdf/2601.11579)                                        |
-| COMPL-AI                                       | open      | Bielik-11B-v2.3-Instruct      | N/A                       | [ewaluator](https://compl-ai.org/)                                                       | [repo](https://github.com/compl-ai/compl-ai)                                                       | [ewaluacja](https://compl-ai.org/evaluations/SpeakLeash-Bielik-11B-v2.3-Instruct) |
+| COMPL-AI                                       | partial      | Bielik-11B-v2.3-Instruct      | N/A                       | [ewaluator](https://compl-ai.org/)                                                       | [repo](https://github.com/compl-ai/compl-ai/tree/main/src/compl_ai/tasks)                                                       | [ewaluacja](https://compl-ai.org/evaluations/SpeakLeash-Bielik-11B-v2.3-Instruct) |
 
 ## Opisy benchmarków
 
@@ -47,7 +45,7 @@ Tabela benchmarków, na których raportowano wyniki modeli z rodziny Bielik, wra
 
 Oficjalny polski leaderboard mierzący ogólne kompetencje NLP/LLM w języku polskim. Obejmuje m.in. analizę sentymentu, NER, klasyfikację tematów, czytanie ze zrozumieniem, QA/RAG, podobieństwo semantyczne, mowę nienawiści i streszczanie.
 
-**Uwagi:** Wynik 5-shot; raport v3 podaje 65.93 dla wersji instruction-tuned.
+**Uwagi:** Wynik 5-shot; raport v3 podaje 65.93 dla wersji instruction-tuned. Benchmark składa się z wielu publicznych datasetów HF; dane nie są jednym plikiem w repo Space. Reprodukcja przez speakleash/lm-evaluation-harness branch polish4.
 
 ### Polish MT-Bench
 
@@ -71,7 +69,7 @@ Benchmark złożonego rozumienia tekstów po polsku. Sprawdza znaczenia ukryte, 
 
 Polski benchmark medyczny oparty na pytaniach z Państwowego Egzaminu Specjalizacyjnego z lat 2018–2022. Sprawdza wiedzę medyczną i rozumowanie kliniczne po polsku.
 
-**Uwagi:** Wynik 5-shot.
+**Uwagi:** Wynik 5-shot. Publiczny data.json zawiera 60 pytań; paper opisuje 600. Wygląda na subset, więc pełny oficjalny wynik nie jest w pełni odtwarzalny.
 
 ### PLCC
 
@@ -179,5 +177,4 @@ Wielojęzyczny benchmark czytania ze zrozumieniem oparty na fragmentach FLORES-2
 
 Zbiór testujący zgodność generowanych treści z wymogami bezpieczeństwa i etyki według EU AI Act.
 
-**Uwagi:** Framework jest otwarty. Znaleziono stronę ewaluacji dla Bielik-11B-v2.3-Instruct.
-
+**Uwagi:** COMPL-AI jest publicznym frameworkiem benchmarkowym, ale dane nie są jednym centralnym datasetem w repo. Poszczególne taski są wrapperami na zewnętrzne benchmarki, np. BBQ jest importowany z inspect_evals. Pełna reprodukcja zależy od dostępności danych i implementacji konkretnych tasków. Znaleziono ewaluację dla Bielik-11B-v2.3-Instruct, nie dla Bielik v3 11B.
